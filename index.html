@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script
+      src="https://kit.fontawesome.com/7a97067ced.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Searh todo-->
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form id="search">
+          <input
+            class="form-control m-auto"
+            type="text"
+            name="search"
+            placeholder="Search Todos"
+          />
+        </form>
+      </header>
+
+      <!--Todo List-->
+      <ul class="list-group todos mx-auto text-light"></ul>
+
+      <!--Add a new todo-->
+      <footer>
+        <form class="add-form text-center my-4">
+          <label class="text-light">Add a new todo</label>
+          <input type="text" class="form-control m-auto" name="add" />
+        </form>
+      </footer>
+    </div>
+
+    <!--Javascript-->
+    <script src="app.js"></script>
+  </body>
+</html>
